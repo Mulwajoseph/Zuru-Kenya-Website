@@ -1,0 +1,564 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ZURU KENYA</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css1/css/css/fontawesome-all.css">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	
+	<!-- Date Picker -->
+	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+	<!-- Flaticons  -->
+	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js3/jquery-3.2.1.min.js">
+    </script>
+  
+    <script src="js3/bootstrap2.min.js"
+        type="text/javascript">
+    </script>
+      
+    <link rel="stylesheet" href=
+"js3/bootstrap.min.css">
+  
+    <script src=
+"js3/jquery.min.js">
+    </script>
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="js2/bootstrap.js"></script>
+	<script src="js2/jquery.min.js"></script>
+	<script src="js2/jquery-1.11.3.min.js"></script>
+	<script src="js2/jquery-1.7.2.min.js"></script>
+	<script src="js2/jquery-1.8.3.min.js"></script>
+	<script src="js2/jquery-1.9.1.min.js"></script>
+	<script src="js2/jquery-1.10.2.js"></script>
+	<script src="js2/jquery-1.11.2.js"></script>
+	<script src="js2/jquery-1.11.3.js"></script>
+
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+	<style type="text/css">
+		.item-blog a{
+        background-repeat: no-repeat; 
+        background-position: 0px 0px;
+        background-size: 100% 100%;
+        height: 300px;
+        width: 100%;
+        position: relative;
+        margin-bottom: 30px;
+        position: relative;
+
+      }
+        #panel{
+        background-image:url('pics/4.jpeg');
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+        background-size:100% 100%;
+        position: relative;
+        
+        height: 100%;
+      }
+      #inner-main{
+      	background-color:rgb(25,25,112,.8);
+        background-color:rgb(25,25,112,);
+      }
+      input{
+      width: 100%;
+      margin: 20px 0;
+      background:rgba(0,0,0,0);
+      border: none;
+      border-bottom: 1px solid white
+    }
+    ::-webkit-input-placeholder{
+      color: #eaeaea;
+      font-size: 12px;
+      letter-spacing: 2px;
+    }option{
+    	color: black;
+    }label{
+    	color: white;
+    }
+	</style>
+
+	</head>
+	<body>
+			<script>
+
+								function GetDetail(str) {
+									if(str.length==0)
+									{
+										document.getElementById("region").value="";
+										return;							
+									}
+									else{
+										var xmlhttp = new XMLHttpRequest();
+										xmlhttp.onreadystatechange = function(){
+											if(this.readystate== 4 &&
+												this.status ==200){
+
+												var myObj = JSON.parse(this.responseText);
+
+												document.getElementById("region").value = myObj[0];
+
+											}
+										};
+										xmlhttp.open("GET", "data.php?name=" + str, true);
+
+										xmlhttp.send();
+									}
+								}
+							</script>
+		
+	<div class="colorlib-loader"></div>
+
+	<div id="page">
+		<nav class="colorlib-nav" role="navigation">
+			<div class="top">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-4">
+							<p class="site">www.zurukenya.com</p>
+						</div>
+						<div class="col-xs-8 text-right">
+							<p class="num">Call: +2547-123-456</p>
+							<ul class="colorlib-social">
+								<li><a href="#"><i class="icon-twitter"></i></a></li>
+								<li><a href="#"><i class="icon-facebook"></i></a></li>
+								<li><a href="#"><i class="icon-linkedin"></i></a></li>
+								<li><a href="#"><i class="icon-dribbble"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="top-menu">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-2">
+							<div id="colorlib-logo"><a href="index.html">ZURU KENYA</a></div>
+						</div>
+						<div class="col-xs-10 text-right menu-1">
+							<ul id="sidebar-list">
+								<li class="active"><a href="index.html">Home</a></li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="#registerform">Register</a></li>
+								<li><a href="login.html">Login</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<aside id="colorlib-hero">
+			<div class="flexslider">
+				<ul class="slides">
+			   	<li style="background-image: url(pics/8.jpeg);">
+			   		<div class="overlay"></div>
+			   		<div class="container-fluid">
+			   			<div class="row">
+				   			<div class="col-md-6 col-sm-12 col-md-offset-3 slider-text">
+				   				<div class="slider-text-inner text-center">
+				   					<h2>Welcome to</h2>
+				   					<h1>ZURU KENYA</h1>
+										
+				   				</div>
+				   			</div>
+				   		</div>
+			   		</div>
+			   	</li>
+			   	<li style="background-image: url(pics/9.jpeg);">
+			   		<div class="overlay"></div>
+			   		<div class="container-fluid">
+			   			<div class="row">
+				   			<div class="col-md-6 col-sm-12 col-md-offset-3 slider-text">
+				   				<div class="slider-text-inner text-center">
+				   					<h2>Discover &amp; Enjoy</h2>
+				   					<h1>Everything you need </h1>
+										
+				   				</div>
+				   			</div>
+				   		</div>
+			   		</div>
+			   	</li>
+			   	<li style="background-image: url(pics/27.jpeg);">
+			   		<div class="overlay"></div>
+			   		<div class="container-fluids">
+			   			<div class="row">
+				   			<div class="col-md-6 col-sm-12 col-md-offset-3 slider-text">
+				   				<div class="slider-text-inner text-center">
+				   					<h2>You are invited</h2>
+				   					<h1>We know how to please you</h1>
+										
+				   				</div>
+				   			</div>
+				   		</div>
+			   		</div>
+			   	</li>
+			   	<li style="background-image: url(pics/39.jpeg);">
+			   		<div class="overlay"></div>
+			   		<div class="container-fluid">
+			   			<div class="row">
+				   			<div class="col-md-6 col-sm-12 col-md-offset-3 slider-text">
+				   				<div class="slider-text-inner text-center">
+				   					<h2>Come &amp; enjoy the unforgetable services</h2>
+				   					<h1>In the heart of Intelligent Tourist Guide</h1>
+										
+				   				</div>
+				   			</div>
+				   		</div>
+			   		</div>
+			   	</li>	   	
+			  	</ul>
+		  	</div>
+		</aside>
+
+
+
+		<div id="colorlib-rooms" class="colorlib-light-grey">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3 text-center colorlib-heading animate-box">
+						<span><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i></span>
+						<h2>Sites &amp; Historical Objects</h2>
+						<p>We love to tell our successful far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 animate-box">
+						<div class="owl-carousel owl-carousel2">
+							<div class="item-blog">
+								<a href="images/room-1.jpg" class="room image-popup-link" style="background-image: url(pics/2.jpg);"></a>
+								<div class="desc text-center">
+									<span class="rate-star"><i class="icon-star-full full"></i><i class="icon-star-full full"></i><i class="icon-star-full full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i></span>
+									<div class="info-warp">
+			                            <h5>Masaai Mara</h5>
+			                            <span>Altitude:</span><br>
+			                            <span>Climatic Condition:</span>
+			                            <p><i class="fa fa-map-marker"></i> Narok County</p>
+			                        </div>
+								
+								</div>
+							</div>
+							<div class="item-blog">
+								<a href="images/room-2.jpg" class="room image-popup-link" style="background-image: url(pics/1.jpeg);"></a>
+								<div class="desc text-center">
+									<span class="rate-star"><i class="icon-star-full full"></i><i class="icon-star-full full"></i><i class="icon-star-full full"></i><i class="icon-star-full full"></i><i class="icon-star-full"></i></span>
+									<div class="info-warp">
+			                            <h5>Tsavo National Park</h5>
+			                            <span>Altitude:</span><br>
+			                            <span>Climatic Condition:</span>
+			                            <p><i class="fa fa-map-marker"></i> Taita Tavet County</p>
+			                        </div>
+									
+								</div>
+							</div>
+							<div class="item-blog">
+								<a href="images/room-3.jpg" class="room image-popup-link" style="background-image: url(pics/78.JPG);"></a>
+								<div class="desc text-center">
+									<span class="rate-star"><i class="icon-star-full full"></i><i class="icon-star-full full"></i><i class="icon-star-full full"></i><i class="icon-star-full full"></i><i class="icon-star-full"></i></span>
+									<div class="info-warp">
+			                            <h5>Thompson Falls</h5>
+			                            <span>Altitude:</span><br>
+			                            <span>Climatic Condtion:</span>
+			                            <p><i class="fa fa-map-marker"></i> Nyahururu</p>
+			                        </div>
+								</div>
+							</div>
+							<div class="item-blog">
+								<a href="images/room-4.jpg" class="room image-popup-link" style="background-image: url(pics/83.JPG);"></a>
+								<div class="desc text-center">
+									<span class="rate-star"><i class="icon-star-full full"></i><i class="icon-star-full full"></i><i class="icon-star-full full"></i><i class="icon-star-full full"></i><i class="icon-star-full"></i></span>
+									<div class="info-warp">
+			                            <h5>Nairobi National Park</h5>
+			                            <span>Altitude:</span><br>
+			                            <span>Climatic Condition:</span>
+			                            <p><i class="fa fa-map-marker">Nairobi</i></p>
+			                            </div>
+								
+								</div>
+							</div>
+							<div class="item-blog">
+								<a href="images/room-5.jpg" class="room image-popup-link" style="background-image: url(pics/85.JPG);"></a>
+								<div class="desc text-center">
+									<span class="rate-star"><i class="icon-star-full full"></i><i class="icon-star-full full"></i><i class="icon-star-full full"></i><i class="icon-star-full full"></i><i class="icon-star-full"></i></span>
+									<div class="info-warp">
+			                            <h5>Aberdare National Park</h5>
+			                            <span>Altitude:</span><br>
+			                            <span>Climatic Condition:</span>
+			                            <p><i class="fa fa-map-marker">Nyeri</i></p>
+			            </div>
+									
+								</div>
+							</div>
+							<div class="item-blog">
+								<a href="images/room-6.jpg" class="room image-popup-link" style="background-image: url(pics/7.jpeg);"></a>
+								<div class="desc text-center">
+									<span class="rate-star"><i class="icon-star-full full"></i><i class="icon-star-full full"></i><i class="icon-star-full full"></i><i class="icon-star-full full"></i><i class="icon-star-full"></i></span>
+									<div class="info-warp">
+			                            <h5>Amboseli National Park</h5>
+			                            <span>Altitude:</span><br>
+			                            <span>Climatic Condition:</span>
+			                            <p><i class="fa fa-map-marker">Kajiado</i></p>
+			                        </div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div id="colorlib-subscribe" style="background-image: url(images/img_bg_2.jpg);">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3 text-center animate-box" id="registerform">
+						<h2 style="color: white !important;">Make an account with us now to plan your next visit</h2>
+						<div class="container-fluid">
+							<div class="w3-content">
+						<form class="form-vertical" method="POST" action="register.php">
+							<input type="text" name="firstname" placeholder="Enter firstname">
+							<input type="text" name="lastname" placeholder="Enter lastname">
+							<input type="text" name="surname" placeholder="Enter surname">
+							<input type="number" name="contacts" placeholder="Enter contacts 7XXXXXXXX">
+							<input type="email" name="email" placeholder="Enter Email">
+							<input type="password" name="password" placeholder="Enter password">
+							<input type="password" name="confirmpassword" placeholder="Enter confirm password">
+							<button class="btn btn-sm btn-primary" name="submit" type="name">Submit</button>&nbsp<button class="btn btn-sm btn-danger" name="reset" type="reset">Reset</button> 
+						</form>
+					</div>
+				</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="colorlib-blog">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3 text-center colorlib-heading animate-box">
+						<span><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i></span>
+						<h2>Recent Blog</h2>
+						<p>We love to tell our success far far away, behind the word mountains, far from the countries , there live the blind texts.</p>
+					</div>
+				</div>
+				<div class="blog-flex">
+					<div class="video colorlib-video" style="background-image: url(images/blog-3.jpg);">
+						<a href="https://vimeo.com/channels/staffpicks/93951774" class="popup-vimeo"><i class="icon-video"></i></a>
+						<div class="overlay"></div>
+					</div>
+					<div class="blog-entry">
+						<div class="row">
+							<div class="col-md-12 animate-box">
+								<a href="blog.html" class="blog-post">
+									<span class="img" style="background-image: url(images/blog-1.jpg);"></span>
+									<div class="desc">
+										<span class="date">January 14, 2018</span>
+										<h3>A Definitive Guide to the Best Dining</h3>
+										<span class="cat">Activities</span>
+									</div>
+								</a>
+							</div>
+							<div class="col-md-12 animate-box">
+								<a href="blog.html" class="blog-post">
+									<span class="img" style="background-image: url(images/blog-2.jpg);"></span>
+									<div class="desc">
+										<span class="date">January 14, 2018</span>
+										<h3>How These 5 People Found The Path to Their Dream Trip</h3>
+										<span class="cat">Activities</span>
+									</div>
+								</a>
+							</div>
+							<div class="col-md-12 animate-box">
+								<a href="blog.html" class="blog-post">
+									<span class="img" style="background-image: url(images/blog-3.jpg);"></span>
+									<div class="desc">
+										<span class="date">January 14, 2018</span>
+										<h3>Our Secret Island Boat Tour Is just for You</h3>
+										<span class="cat">Activities</span>
+									</div>
+								</a>
+							</div>
+							<div class="col-md-12 animate-box text-right">
+								<a href="#">View all blog post <i class="icon-arrow-right3"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="colorlib-testimony" class="colorlib-light-grey">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3 text-center colorlib-heading animate-box">
+						<span><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i></span>
+						<h2>Our Satisfied Guests says</h2>
+						<p>We love to tell our successful far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+					</div>
+				</div>
+				<div class="row">
+				<div class="col-md-4 animate-box">
+					<div class="testimony text-center">
+						<span class="img-user" style="background-image: url(images/person2.jpg);"></span>
+						<span class="user">Brian Doe</span>
+						<small>Satisfied Customer</small>
+						<blockquote>
+							<p></i> Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+						</blockquote>
+					</div>
+				</div>
+				<div class="col-md-4 animate-box">
+					<div class="testimony text-center">
+						<span class="img-user" style="background-image: url(images/person1.jpg);"></span>
+						<span class="user">Nathalie Miller</span>
+						<small>Satisfied Customer</small>
+						<blockquote>
+							<p></i> Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+						</blockquote>
+					</div>
+				</div>
+				<div class="col-md-4 animate-box">
+					<div class="testimony text-center">
+						<span class="img-user" style="background-image: url(images/person3.jpg);"></span>
+						<span class="user">Shara Jones</span>
+						<small>Satisfied Customer</small>
+						<blockquote>
+							<p></i> Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+						</blockquote>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		
+		<footer id="colorlib-footer" role="contentinfo">
+			<div class="container">
+				<div class="row row-pb-md">
+					<div class="col-md-3 colorlib-widget">
+						<h4>Luxehotel</h4>
+						<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
+						<p>
+							<ul class="colorlib-social-icons">
+								<li><a href="#"><i class="icon-twitter"></i></a></li>
+								<li><a href="#"><i class="icon-facebook"></i></a></li>
+								<li><a href="#"><i class="icon-linkedin"></i></a></li>
+								<li><a href="#"><i class="icon-dribbble"></i></a></li>
+							</ul>
+						</p>
+					</div>
+					<div class="col-md-3 colorlib-widget">
+						<h4>Quick Links</h4>
+						<p>
+							<ul class="colorlib-footer-links">
+								<li><a href="#">Accomodation</a></li>
+								<li><a href="#">Dining &amp; Bar</a></li>
+								<li><a href="#">Restaurants</a></li>
+								<li><a href="#">Beach &amp; Resorts</a></li>
+							</ul>
+						</p>
+					</div>
+					<div class="col-md-3">
+						<h4>Recents Blog Post</h4>
+						<ul class="colorlib-footer-links">
+							<li><a href="#">The Ultimate Packing List For Female Travelers</a></li>
+							<li><a href="#">How These 5 People Found The Path to Their Dream Trip</a></li>
+							<li><a href="#">A Definitive Guide to the Best Dining and Drinking Venues in the City</a></li>
+						</ul>
+					</div>
+
+					<div class="col-md-3 col-md-push-1">
+						<h4>Contact Information</h4>
+						<ul class="colorlib-footer-links">
+							<li>291 South 21th Street, <br> Suite 721 New York NY 10016</li>
+							<li><a href="tel://1234567920">+ 1235 2355 98</a></li>
+							<li><a href="mailto:info@yoursite.com">info@yoursite.com</a></li>
+							<li><a href="http://luxehotel.com">luxehotel.com</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<p>
+							<small class="block"><!-- Link back to Colorlib can't be removed.-->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved<i class="icon-heart3" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></small> 
+							<small class="block">Demo Images: <a href="http://unsplash.com/" target="_blank">Unsplash</a></small>
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
+	</div>
+	
+	
+	<!-- jQuery -->
+	 	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Owl carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	<!-- Date Picker -->
+	<script src="js/bootstrap-datepicker.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+
+
+	</body>
+</html>
+
